@@ -8,7 +8,7 @@ text-decoration:none;
 }
 a,button{
     cursor:pointer;
-    color:rgb(0, 0, 117);
+   
 }
 body{
     padding:0 2em;
@@ -20,6 +20,8 @@ h1,h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 
+}
+ul{    list-style:none;
 }
 /* .background-container{
 background-image: url(imgs/street1.jpg);
@@ -39,13 +41,14 @@ background-repeat: no-repeat;
     flex-wrap: wrap;
 
 }
+
 #navbar .navbar-items{
     display:flex;
     list-style:none;
-    width:30%;
+    width:40%;
     /* border:1px solid red; */
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .nav-item{
     font-family: 'Montserrat', sans-serif;
@@ -139,14 +142,79 @@ color:#fff;
     cursor: pointer;
     color:rgb(25, 42, 190);
 }
+
+
+/* dashboard css */
+.dashboard-container{
+    width:100%;
+    min-height:100vh;
+    
+}
+.dashboard-container #sidebar ul li .side-bar-icons{
+    width:2em;
+    background-size: contain;
+     margin-right:10px;
+   
+}
+.dashboard-container #sidebar ul li{
+    font-family: 'Roboto', sans-serif;
+    transition:all 0.3s ease-in-out;
+
+}
+.dashboard-container #sidebar ul li{
+    color:#111;
+}
+.dashboard-container #sidebar ul li:hover{
+    transform:scale(1.1);
+    color:rgb(28, 11, 102);
+
+}
+#sidebar{
+    padding:1em;
+    /* border:1px solid red; */
+    background-color: rgb(255, 255, 255);
+
+
+    width:30%;
+    text-align:left;
+    min-height: 100%;
+    position:fixed;
+    
+}
+.dashboard-container #sidebar .side-bar-items{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    
+
+}
+.side-bar-item{
+    margin:1em 0;
+    display:flex;
+    align-items: center;
+    
+}
+
+/* end of dashboard css */
 @media screen and (max-width:900px){
 .login-form-container{width:50%;
     transform:translateY(20%);
+}
+#navbar .navbar-items{
+
+    width:60%;
 }
 }
 @media screen and (max-width:600px){
     .login-form-container{width:70%;
         transform:translateY(20%);}
+    #navbar .navbar-items{
+
+    width:70%;
+ 
+}
     }
     @media screen and (max-width:400px){
         .login-form-container{width:90%;

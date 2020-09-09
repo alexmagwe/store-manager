@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='navbar'>
+        <a href='#'><span class="nav-item">Store</span></a>
+    <ul class='navbar-items'> 
+        <a href='/store-manager/dashboard.html'><li class="nav-item">Dashboard</li></a>
+         <a href=#><li class="nav-item">Login</li></a> 
+    </ul>
+    </div>
+<div class='hero'>
+    <div class='form-container'>
+        <div class="button-container">
+                        <div class="slider"></div>
+
+            <button class="toggle-btn" onclick="login()">Login</button>
+            <button class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="/store-manager/imgs/social/gp.png">
+            <img src="/store-manager/imgs/social/fb.png">
+        </div>
+        <form id='login-form' action="" class="auth-form">
+            <input type='text' class='input-field' placeholder='email'>
+            <input type='password'  class='input-field' placeholder="enter password">
+            <input type='checkbox' class='check-box'><small class='fg-password'>Remember password</small>
+            <button class="submit-btn">Login</button>
+        </form>
+          <form id='register-form' action="" class="auth-form">
+            <input type='text' class='input-field' placeholder='username'>
+            <input type='text' class='input-field' placeholder='email'>
+            <input type='password'  class='input-field' placeholder="enter password">
+            <input type='password'  class='input-field' placeholder="confirm password">
+ <input type='checkbox' class='check-box'><small class='fg-password'>Remember password</small>
+            <button class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+<script>
+        let registerform=document.querySelector('#register-form')
+    let loginform=document.querySelector('#login-form')
+    let slider=document.querySelector('.slider');
+    function register(){
+        loginform.style.left='-400px';
+        registerform.style.left='50px'
+        slider.style.left='100px';
+        
+    }
+       function login(){
+        loginform.style.left='50px';
+        registerform.style.left='450px'
+        slider.style.left=0;
+
+    }
+</script>
+
+</body>
+</html>

@@ -10,9 +10,7 @@ a,button{
     cursor:pointer;
    
 }
-body{
-    /* padding:0 2em; */
-}
+
 p{
     font-family: 'Open Sans', sans-serif;
 }
@@ -143,6 +141,7 @@ margin-right:0.5em;
 /* dashboard css */
 .dashboard-container{
     width:100%;
+    padding:2em;
     min-height:100vh;
     
 }

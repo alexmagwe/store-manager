@@ -1,19 +1,19 @@
 # store-manager
 store management system
-####the system is designed for Point of sale tasks and also will contain data visualization of how the shop is doing 
-####features
+#### the system is designed for Point of sale tasks and also will contain data visualization of how the shop is doing 
+#### features
 * automatic recording of sales for each attendant
 * shop attendant can view sales records and other relevant statistics
 * shop attendant can add products to cart 
   
-####admin features
+#### admin features
 * view profit
 * view sales records of each attendant
 * view relevant statistics
 * add attendants
 * add products to the system
   
-####completed features
+#### completed features
 1. store attendant dashboard UI
 2. login UI template
 3. POS (point of sale) UI(needs better styling maybe)

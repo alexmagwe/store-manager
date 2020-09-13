@@ -3,24 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width",='table-data'>
+    <meta name="viewport" content="width=device-width" ,='table-data'>
     <link rel='stylesheet' href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-        <script type="text/javascript" src='charts.js' defer></script>
+    <script type="text/javascript" src='charts.js' defer></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
     <div id='navbar'>
-        <a href='/store-manager/index.html'><span class="nav-item">Store</span></a>
+        <a href='/index.html'><span class="nav-item">Store</span></a>
         <ul class='navbar-items'>
             <a href='#'>
                 <li class="nav-item">Dashboard</li>
             </a>
-            <a href='/store-manager/forms.html'>
-                <li class="nav-item">Login</li>
+            <a href='/forms.html'>
+                <!-- <li class="nav-item">Login</li> -->
             </a>
         </ul>
     </div>
@@ -58,24 +58,27 @@
         </div>
         <div class='dashboard-content'>
             <div id="section-1">
-                <div class="dashboard-tile">
-                    <h2 class='amount'>11340 KSH</h2>
-                    <p>Weekly sales</p>
+                <div class='dashboard-tiles'>
+                    <div class="dashboard-tile">
+                        <h2 class='amount'>11340 KSH</h2>
+                        <p>Weekly sales</p>
+                    </div>
+                    <div class="dashboard-tile">
+                        <h2 class='amount'>143</h2>
+                        <p>Sales this week</p>
+                    </div>
+                    <div class="dashboard-tile">
+                        <h2 class='amount'>4520 KSH</h2>
+                        <p>Profit</p>
+                    </div>
                 </div>
-                <div class="dashboard-tile">
-                    <h2 class='amount'>143</h2>
-                    <p>Sales this week</p>
-                </div>
-                <!-- <div class="dashboard-tile">
-                    <h2 class='amount'>4520 KSH</h2>
-                    <p>Profit</p>
-                </div> -->
-                 <div id="bonus-chart"></div>
-                <div id="linechart"></div>
-
                 <div id="stock-chart"></div>
+                <div id="linechart"></div>
+                <!-- <div id="bonus-chart"></div> -->
                 <div id="piechart"></div>
-                    <div id="barchart"></div>
+                <div id="barchart"></div>
+
+
 
 
             </div>
@@ -84,110 +87,116 @@
             <div id="section-2">
                 <div class="sales-table">
                     <table id='salestable'>
+                        <caption>Sales</caption>
                         <thead>
                             <tr>
-                                <th colspan="2" class="table-header">Product</th>                                    
-                                <th class="table-header">amount (ksh)</th>
+                                <th colspan="2" class="table-header">Product</th>
+                                <th class="table-header">Amount (ksh)</th>
                                 <th class="table-header">Quantity </th>
                                 <th class="table-header">Date</th>
-                                <th class="table-header">Total </th>
+                                <th class="table-header">Total (Ksh) </th>
                             </tr>
                         </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="2">Eggs</td>
-                            <td>12</td>
-                            <td>2</td>
-                             <td>21/10/2020</td>
-                            <td>24</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Milk</td>
-                            <td>50</td>
-                            <td>1</td>                                                   
-                             <td>20/10/2020</td>
-                            <td>50</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Eggs</td>
-                            <td>12</td>
-                            <td>1</td>                                                     
-                             <td>19/10/2020</td>
-                            <td>12</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Milk</td>
-                            <td>50</td>
-                            <td>2</td>                                                       
-                             <td>18/10/2020</td>
-                            <td>100</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Eggs</td>
+                                <td>12</td>
+                                <td>2</td>
+                                <td>21/10/2020</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Milk</td>
+                                <td>50</td>
+                                <td>1</td>
+                                <td>20/10/2020</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Eggs</td>
+                                <td>12</td>
+                                <td>1</td>
+                                <td>19/10/2020</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Milk</td>
+                                <td>50</td>
+                                <td>2</td>
+                                <td>18/10/2020</td>
+                                <td>100</td>
+                            </tr>
 
-                           <tr>
-                            <td colspan="2">Eggs</td>
-                            <td>12</td>
-                            <td>5</td>
-                             <td>18/10/2020</td>
-                            <td>60</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Margarine</td>
-                            <td>145</td>
-                            <td>1</td>
-                             <td>17/10/2020</td>
-                            <td>145</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Bread</td>
-                            <td>70</td>
-                            <td>1</td>
-                             <td>17/10/2020</td>
-                            <td>70</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Oil</td>
-                            <td>175</td>
-                            <td>1</td>
-                             <td>16/10/2020</td>
-                            <td>100</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2"> Sunlight Soap</td>
-                            <td>30</td>
-                            <td>4</td>
-                             <td>16/10/2020</td>
-                            <td>120</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Brown bread</td>
-                            <td>60</td>
-                            <td>1</td>
-                             <td>16/10/2020</td>
-                            <td>60</td>
-                        </tr>
-                           <tr>
-                            <td colspan="2">Milk</td>
-                            <td>50</td>
-                            <td>3</td>
-                             <td>15/10/2020</td>
-                            <td>150</td>
-                        </tr>   <tr>
-                            <td colspan="2">Aquafresh 300ml</td>
-                            <td>40</td>
-                            <td>2</td>
-                             <td>15/10/2020</td>
-                            <td>80</td>
-                        </tr>   <tr>
-                            <td colspan="2">Eggs</td>
-                            <td>12</td>
-                            <td>12</td>
-                             <td>15/10/2020</td>
-                            <td>244</td>
-                        </tr>
-                    </tbody>
+                            <tr>
+                                <td colspan="2">Eggs</td>
+                                <td>12</td>
+                                <td>5</td>
+                                <td>18/10/2020</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Margarine</td>
+                                <td>145</td>
+                                <td>1</td>
+                                <td>17/10/2020</td>
+                                <td>145</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Bread</td>
+                                <td>70</td>
+                                <td>1</td>
+                                <td>17/10/2020</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Oil</td>
+                                <td>175</td>
+                                <td>1</td>
+                                <td>16/10/2020</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> Sunlight Soap</td>
+                                <td>30</td>
+                                <td>4</td>
+                                <td>16/10/2020</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Brown bread</td>
+                                <td>60</td>
+                                <td>1</td>
+                                <td>16/10/2020</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Milk</td>
+                                <td>50</td>
+                                <td>3</td>
+                                <td>15/10/2020</td>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Aquafresh 300ml</td>
+                                <td>40</td>
+                                <td>2</td>
+                                <td>15/10/2020</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Eggs</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>15/10/2020</td>
+                                <td>244</td>
+                            </tr>
+                        </tbody>
 
                     </table>
                 </div>
+              <a href='/cart.html' class='new-transaction'>
+                   <h2>New transaction</h2> 
+            </a>
 
             </div>
             <div id="section-3">
@@ -197,7 +206,7 @@
 
         </div>
     </div>
- 
+
 
 </body>
 

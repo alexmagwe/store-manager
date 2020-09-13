@@ -200,48 +200,57 @@ margin-right:0.5em;
     
 }
 .dashboard-content{
-    background-color: #ffffff;
+      background-color:#a1d8b25b;
     margin-left:15%;
     width:85%;
     height:100%;
 }
 .dashboard-content>div{
-    min-height:100vh;;
+    min-height:100vh;
+    padding:10px;
 
 }
 
 #section-1{
     width:100%;
-    padding:10px;
+    padding:0.5em;
         display:grid;
         grid-template-columns:repeat(3,1fr);
          justify-items: center;
          grid-auto-rows:minmax(100px,auto);
-        grid-gap:1em;
+        grid-gap:0.5em;
         min-height:100vh;
+        border-bottom:2px solid rgba(221, 215, 215, 0.815);
         transition:all 0.3s ease-in;
 
 
 }
+.dashboard-tiles{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid red; */
+}
 #linechart{
-grid-column:1/3;
+grid-column:1;
 }
 #piechart{
-    grid-column:1;
+    grid-column:2;
     /* justify-self: left; */
 
 }
 .dashboard-tile{
     background-color:#B76EB8;
-    width:200px;
-    height:100px;
+    width:150px;
+    height:150px;
     color:#fff;
     display:flex;
+    border:5px inset #a5f5bf;
     flex-direction: column;
     justify-content: center;
     align-items: center;;
     text-align:center;
-    border-radius:10px;
+    border-radius:50%;
     margin:1em;
 
 }
@@ -261,16 +270,43 @@ grid-column:1/3;
 #section-2{
     background-color:#ffffff;
     max-height:100vh;
-    overflow-y:hidden;
+    position: relative;
+    padding:3em;
+    display:flex;
+    justify-content: space-evenly;
+ height:100vh;
+    /* padding:0.5em; */
+  
+    width:100%;
+   
+}
+.sales-table{
+    width:60%;
+    height:80%;
+    overflow-y: scroll;
 }
 #salestable{
-    width:80%;
-    margin:auto;
+    width:100%;
+    margin-left:0;
+    height:80%;
     border-collapse: collapse;
-
-
+    
 }
-
+.new-transaction{
+    cursor: pointer;
+    box-shadow: 0 0 15px 2px #83f893a2;
+    height:20%;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    border-radius:10px;
+    transition:all 0.2s ease-in-out;
+}
+.new-transaction:hover{
+    transform:scale(1.1);
+}
 .table-header{
     padding:1em;
     background-color:transparent;
@@ -278,7 +314,7 @@ grid-column:1/3;
     /* border-right:2px solid silver; */
 }
 #salestable tr:nth-child(even){
-    background-color:#86d69f98;
+    background-color:#c2ffd998;
 }
 
 td{

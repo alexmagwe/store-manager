@@ -41,18 +41,17 @@
 
     options1={'title': 'popular products this week', 'width': 400, 'height': 350, 'backgroundColor': "#FFF4" };            
          sales_options={'title': 'daily sales', 'width': 710, 'height': 350, 'backgroundColor': "#FFF4" };
-          stock_options={'title':'stock remaining','width':300,'height':'auto','backgroundColor': "#FFF4" };
+          stock_options={'title':'stock remaining','width':400,'height':300,'backgroundColor': "#FFF4" };
         bonus_options={'title':'target for bonus',pieHole: 0.4,'width':300,'height':'auto','backgroundColor': "#FFF4" };
 
             // Display the chart inside the <div> element with id="piechart"
             let chart = new google.visualization.PieChart(document.getElementById('piechart'));
             chart.draw(data, options1);
-            let chart1 = new google.visualization.PieChart(document.getElementById('bonus-chart'));
-            chart1.draw(bonus, bonus_options);
+            // let chart1 = new google.visualization.PieChart(document.getElementById('bonus-chart'));
+            // chart1.draw(bonus, bonus_options);
             let chart2 = new google.visualization.LineChart(document.getElementById('linechart'));
             chart2.draw(sales, sales_options)
-             let chart4= new google.visualization.LineChart(document.getElementById('barchart'));
-            chart4.draw(data, options1);
+         
             let chart3=new google.visualization.BarChart(document.getElementById('stock-chart'));
             chart3.draw(stock,stock_options)
         }

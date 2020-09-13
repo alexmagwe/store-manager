@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shopit</title>
+    <link rel='stylesheet' href="styles.css">
+        <link rel='stylesheet' href="cart.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='navbar'>
+        <a href='#'><span class="nav-item">Store</span></a>
+        <ul class='navbar-items'> 
+            <a href='dashboard.html'><li class="nav-item">Dashboard</li></a>
+        </ul>
+    </div>
+
+<div class="cart-container">
+    <div class="search-box">
+        <input type="text"  placeholder='Search' class="search-input">
+        <div class="search-results"></div>
+    </div>
+
+    <div class="cart-box">
+        <table id='cart-table'>
+            <thead>
+                <tr>
+                <th colspan="2" id='item-head'>
+                        Item
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                    <th>
+                        Amount (ksh)
+                    </th>
+                </tr>
+            </thead>
+            <tbody #id='cart-content'>
+                         <tr>
+                                <td colspan="2">PepperMint</td>
+                                <td>2</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Milk</td>
+                                <td>1</td>
+                                <td>50</td>
+                            </tr>
+                  
+                            <tr>
+                                <td colspan="2">Cornflakes</td>
+                                <td>1</td>
+                                <td>275</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">Eggs</td>
+                                <td>5</td>                                
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Margarine</td> 
+                                <td>1</td>
+                                <td>145</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Bread</td>
+                                <td>1</td>
+                                  <td>70</td>
+                            </tr>
+            </tbody>
+            <th colspan='3'>Total</th>
+            <td id="total"><h3>565</h3></td>
+        </table>
+    </div>
+    <div class='money-box'>
+        <span class='cash-desc'>Cash recieved</span>
+        <form action=''>
+            <input type="text" value='1000' class="cash-input">
+        </form>
+         <span class='cash-desc'>Change</span>
+         <span  id='change'>435 KSH</span>
+           <div id='end-transaction'>
+            <button id='end-transaction-btn'>complete Transaction </button>
+     </div>
+    </div>
+      
+     
+
+</div>
+<!-- <script src='/index.js'></script> -->
+
+</body>
+</html>

@@ -72,25 +72,27 @@ height:auto;
 margin:auto;
 transform:translateY(10%);
 box-shadow: 5px 2px 10px 2px rgba(133, 136, 138, 0.226);
-background-color:rgba(0, 0, 0, 0);
+background-color:rgba(0, 0, 0, 0.609);
 
 }
 .login-form{
-
 display: flex;
 flex-direction: column;
 flex: 1;
+/* justify-content: center; */
+/* align-items: center; */
 flex-wrap:wrap;
 }
 .login-form-header{
 margin: 1em;
-color:rgb(73, 70, 70);
+color:rgb(153, 147, 147);
 }
 
 .login-form>input{
-border:1px solid silver;
+/* border:1px solid silver; */
 border-radius:5px;
-width:100%;
+color:#fff;
+/* width:100%; */
 margin:1em;
 font:inherit;
 padding:10px;
@@ -104,13 +106,14 @@ font-weight:550;
 .password-container{
     /* border:1px solid silver; */
     margin:1em;
-    /* position:relative; */
+    position:relative;
 
 
 }
 .password-container input{
 width:100%;
-border:1px solid silver;
+/* border:1px solid silver; */
+color:#fff;
 font:inherit;
 border-radius:5px;
 padding:10px;
@@ -119,7 +122,7 @@ padding:10px;
 position:relative;
 float:right;
 cursor: pointer;
-margin-top:-2.5em;
+margin-top:-3em;
 margin-right:0.5em;
 }
 .submit-btn{
@@ -396,12 +399,12 @@ th {text-align:left;}
     transition:all 0.5s ease-in-out;
 }
 .input-field{
-width:100%;
+/* width:100%; */
 padding:10px;
 /* border-radius:20px; */
 margin:15px 0;
 border:none;
-border-bottom:1px solid #999;
+border-bottom:1px solid rgb(233, 233, 233);
 outline:none;
 background:transparent;
 
@@ -414,10 +417,11 @@ border-radius:20px;
 background: linear-gradient(to right,#ff105f,#ffad06);
 }
 .check-box{
-    margin:30px 10px 0 0;
+    margin:1em;
 }
 .fg-password{
     color:#7777;
+    margin:1em;
 }
 
 #login-form{
